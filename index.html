@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Store</title>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width,initial-scal=1.0">
+    <meta http-equip="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.store.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  		</button>
+            <div class="topnav">
+                <a style="color:black;" class="active" href="#home">Trang chủ</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a style="color:black;" class="nav-link" href="#featured-categories">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:black;" class="nav-link" href="#masthread">Giỏ hàng</a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a style="color:black;" class="nav-link" href="#about">Về chúng tôi</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a style="color:black;" class="nav-link" href="#services">Dịch vụ chúng tôi</a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a style="color:black;" class="nav-link" href="#team" tabindex="-1" aria-disabled="true">Our Team</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a style="color:black;" class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="slider">
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="10000">
+                        <img src="images/cos21.jpg" class="d-block w-100" alt="..." style="width:auto;height:800px;">
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                        <img src="images/cos7.jpg" class="d-block w-100" alt="..." style="width:auto;height:800px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/cos10.png" class="d-block w-100" alt="..." style="width:auto;height:800px;">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+        <!------Featured Categories----->
+        <section class="featured-categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/cos6.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/cos2.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/cos8.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/cos11.jpg">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="new-arrivals">
+            <div id="site">
+                <div class="container">
+                    <div class="title-box">
+                        <h2>New Arrivals</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos1.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua">
+					<i class="fa fa-eye"></i>
+					</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+					<i class="fa fa-heart-o"></i>
+					</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+					<i class="fa fa-shopping-cart"></i>
+					</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem dưỡng</h3>
+                                <div class="product-description" data-name="Kem dưỡng" data-price="10">
+
+                                    <p class="product-price"> 50000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos2.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua">
+					<i class="fa fa-eye"></i>
+					</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+					<i class="fa fa-heart-o"></i>
+					</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+					<i class="fa fa-shopping-cart"></i>
+					</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem chống nắng</h3>
+                                <div class="product-description" data-name="Kem chống nắng" data-price="15">
+
+                                    <p class="product-price">150.000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos3.png">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+					<i class="fa fa-eye"></i>
+					</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+					<i class="fa fa-heart-o"></i>
+					</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+					<i class="fa fa-shopping-cart"></i>
+					</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem nền</h3>
+                                <div class="product-description" data-name="Kem nền" data-price="14">
+
+                                    <p class="product-price"> 140000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos14.png">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem mắt</h3>
+                                <div class="product-description" data-name="Kem mắt" data-price="30">
+
+                                    <p class="product-price">300000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos5.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem dưỡng</h3>
+                                <div class="product-description" data-name="Kem dưỡng" data-price="31">
+
+                                    <p class="product-price">310000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos6.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem lót</h3>
+                                <div class="product-description" data-name="Kem lót" data-price="30">
+
+                                    <p class="product-price">300000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos7.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Tẩy trang</h3>
+                                <div class="product-description" data-name="Tẩy trang" data-price="16">
+
+                                    <p class="product-price">160000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos8.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Sữa rửa mặt</h3>
+                                <div class="product-description" data-name="Sữa rửa mặt" data-price="40">
+
+                                    <p class="product-price">400000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Add to cart" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="on-sale">
+            <div id="site">
+                <div class="container">
+                    <div class="title-box">
+                        <h2>On Sale</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos9.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Sữa rửa mặt</h3>
+                                <div class="product-description" data-name="Sữa rửa mặt" data-price="12">
+
+                                    <p class="product-price">120000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Add to cart" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos10.png">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Xịt khoáng</h3>
+
+                                <div class="product-description" data-name="Xịt khoáng" data-price="34">
+
+                                    <p class="product-price">340000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos11.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Tẩy trang</h3>
+                                <div class="product-description" data-name="Tẩy trang" data-price="20">
+
+                                    <p class="product-price">200000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos12.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem dưỡng</h3>
+                                <div class="product-description" data-name="Kem dưỡng" data-price="60">
+
+                                    <p class="product-price">600000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Quantity</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos13.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem nền</h3>
+                                <div class="product-description" data-name="Kem nền" data-price="17">
+
+                                    <p class="product-price">170000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Quantity</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos14.png">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Xịt khoáng</h3>
+                                <div class="product-description" data-name="Xịt khoáng" data-price="28">
+
+                                    <p class="product-price">280000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos15.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Kem chóng nắng</h3>
+                                <div class="product-description" data-name="Kem chóng nắng" data-price="21">
+
+                                    <p class="product-price">210000&#8363;</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="images/cos16.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Mua hàng">
+										<i class="fa fa-eye"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào yêu thích">
+										<i class="fa fa-heart-o"></i>
+										</button>
+
+                                    <button type="button" class="btn btn-secondary" title="Thêm vào giỏ hàng">
+										<i class="fa fa-shopping-cart"></i>
+										</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Serum</h3>
+
+                                <div class="product-description" data-name="Serum" data-price="25">
+
+                                    <p class="product-price">250000&#8363;&euro; 25</p>
+                                    <form class="add-to-cart" action="cart.html" method="post">
+                                        <div>
+                                            <label for="qty-2">Số lượng</label>
+                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Thêm vào giỏ hàng" class="btn" /></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!------About Section------->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Về Website</h2>
+                        <div class="about-content">
+                            Đây là bài báo cáo cuối kì môn học KIẾN TRÚC PHẦN MỀM HIỆN ĐẠI về đề tài Thương Mại Điện Tử Mỹ Phẩm
+
+
+                        </div>
+                        <button type="button" class="btn btn-primary">Đọc thêm>>
+			
+			</button>
+
+                    </div>
+                    <div class="col-md-6 skills-bar">
+                        <p>Đánh giá</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:85%;">85%</div>
+                        </div>
+
+                        <p>Lượng khách hàng</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:75%;">75%</div>
+                        </div>
+
+                        <p>Trải nghiệm mua hàng</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:90%;">90%</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!------Services Section------->
+            <section id="services">
+
+                <div class="container">
+                    <h1>Our Services</h1>
+                    <div class="row services">
+                        <div class="col-md-4 text-center">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <h3> Hỗ trợ 24/7</h3>
+                            <p>cho đơn hàng của bạn</p>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <div class="icon">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <h3> Hoàn trả lên tới 30 ngày</h3>
+                            <p>đối với đơn hàng của bạn</p>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <div class="icon">
+                                <i class="fa fa-truck"></i>
+                            </div>
+                            <h3>Miễn phí vận chuyển</h3>
+                            <p>với đơn hàng trên 500.000đ</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <!-----Team------->
+            <section id="team">
+
+                <div class="container">
+                    <h1>ĐỘI NGŨ CHÚNG TÔI</h1>
+                    <div class="row">
+                        <div class="col-md-3 profile-pic text-center">
+                            <div class="img-box">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFAGRcm8xf54vh79rStYKeJjjU9DyIahhg_lISffKgXG2H8jeX&usqp=CAU" class="img-responsive">
+                                <ul>
+                                    <a href="https://www.facebook.com/">
+                                        <li><i class="fa fa-facebook"></i></li>
+                                    </a>
+                                    <a href="https://twitter.com/login">
+                                        <li><i class="fa fa-twitter"></i></li>
+                                    </a>
+                                    <a href="https://www.linkedin.com/home">
+                                        <li><i class="fa fa-linkedin"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <h2>Daniel Brown</h2>
+                            <h3>Giám đốc/CEO</h3>
+
+                        </div>
+
+                        <div class="col-md-3 profile-pic text-center">
+                            <div class="img-box">
+                                <img src="images/FACE1.jpg" class="img-responsive">
+                                <ul>
+                                    <a href="https://www.facebook.com/">
+                                        <li><i class="fa fa-facebook"></i></li>
+                                    </a>
+                                    <a href="https://twitter.com/login">
+                                        <li><i class="fa fa-twitter"></i></li>
+                                    </a>
+                                    <a href="https://www.linkedin.com/home">
+                                        <li><i class="fa fa-linkedin"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <h2>Karam </h2>
+                            <h3>Giám đốc Marketing</h3>
+
+                        </div>
+
+                        <div class="col-md-3 profile-pic text-center">
+                            <div class="img-box">
+                                <img src="images/FACE2.jpg" class="img-responsive">
+                                <ul>
+                                    <a href="https://www.facebook.com/">
+                                        <li><i class="fa fa-facebook"></i></li>
+                                    </a>
+                                    <a href="https://twitter.com/login">
+                                        <li><i class="fa fa-twitter"></i></li>
+                                    </a>
+                                    <a href="https://www.linkedin.com/home">
+                                        <li><i class="fa fa-linkedin"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <h2>Bill William</h2>
+                            <h3>Sales Manager</h3>
+
+                        </div>
+
+                        <div class="col-md-3 profile-pic text-center">
+                            <div class="img-box">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQO8y-nOmAu8jfeyaIbWi3FL9ojdEf28f6st5uDgQmD7JfHLvfN&usqp=CAU" class="img-responsive">
+                                <ul>
+                                    <a href="https://www.facebook.com/">
+                                        <li><i class="fa fa-facebook"></i></li>
+                                    </a>
+                                    <a href="https://twitter.com/login">
+                                        <li><i class="fa fa-twitter"></i></li>
+                                    </a>
+                                    <a href="https://www.linkedin.com/home">
+                                        <li><i class="fa fa-linkedin"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <h2>Leonal</h2>
+                            <h3>Manager Dự án</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!------COntact------------>
+            <section id="contact">
+
+                <div class="container">
+                    <h1>Đăng ký ngay TẠI ĐÂY</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Tên của bạn">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email..">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" placeholder="Tin nhắn"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">ĐĂNG KÝ</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6 contact-info">
+                            <div class="follow"><b><i class="fa fa-map-marker"></i>  </b>172, Bùi Xương Trạch Thanh Xuân</div>
+                            <div class="follow"><b><i class="fa fa-mobile"></i>  </b>19001008</div>
+                            <div class="follow"><b><i class="fa fa-envelope"></i>  </b>cosmetic@gmail.com</div>
+
+
+                            <div class="follow"><label><b>Get Social </b></label>
+                                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+                                <a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
+                                <a href="https://myaccount.google.com/"><i class="fa fa-google-plus"></i></a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+</body>
+
+</html>
